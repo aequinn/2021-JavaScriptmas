@@ -1,0 +1,69 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--snow);
+    background-color: var(--bright-red);
+}
+
+.checklist {
+    position: relative;
+    background: var(--snow);
+    color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 5ch;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.checklist-item {
+    margin: 0.5em;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type=checkbox]:checked + label.strikethrough span{
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+input[type=checkbox]:checked + label.strikethrough span::before {
+    content: "❄️ ";
+    margin-left: -19px;
+}
+
+input[type=checkbox]:checked{
+   visibility:hidden;
+}
+
+
+/* Task:
+- Write the CSS to create custom checkboxes for our shopping list.
+
+Stretch goals: 
+- Add a different random check for each item.
+- Use JavaScript to match the custom check to the item listed, e.g. socks would have socks as the checkmark. */
