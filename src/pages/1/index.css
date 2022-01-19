@@ -12,7 +12,7 @@ html, body {
     padding: 0;
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;

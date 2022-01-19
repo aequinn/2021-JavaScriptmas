@@ -1,0 +1,33 @@
+
+html, body {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav {
+ display: flex;
+ justify-content:space-around;
+ 
+}
+.nav-menu {
+    list-style-type: none;
+    padding:0;
+
+}
+.menu-item{
+    display: inline-block;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+}

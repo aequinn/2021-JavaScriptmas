@@ -1,0 +1,14 @@
+---
+import BasePage from '../../components/BasePage.astro'
+---
+<BasePage title='Christmas Countdown' >
+       <link href={Astro.resolve('./index.css')} rel='stylesheet'/>
+        <main>
+            <h1>Christmas Countdown 🎄</h1>
+            <div class="container">
+                <p id="countdown-display" class="countdown-display">-</p>
+                <p class="countdown-text">Days 'til Christmas!</p>
+            </div>
+        </main>
+        <script src={Astro.resolve("./index.js")}></script>
+</BasePage>
